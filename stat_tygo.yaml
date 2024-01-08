@@ -1,0 +1,5 @@
+packages:
+  - path: "github.com/jinford/server-stat-web-viewer"
+    output_path: "./webui/src/types/stat.ts"
+    include_files:
+      - "stat.go"
