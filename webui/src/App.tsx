@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 
 import { Stat } from "./types/stat";
 import { useEventSource } from "./useEventSource";
-import { Memory } from "./components/Memory2";
-import { Swap } from "./components/Swap2";
-import { CPU } from "./components/CPU2";
+import { Memory } from "./components/Memory";
+import { CPU } from "./components/CPU";
 import { Process } from "./components/Process";
 
 import "./App.css";
@@ -28,14 +27,11 @@ function App() {
   return (
     <>
       <div className="container mx-auto py-12">
-        <div className="mb-24">
-          <CPU stat={stat} />
-        </div>
-        <div className="mb-24">
-          <Memory stat={stat} />
-        </div>
-        <div className="mb-24">
-          <Swap stat={stat} />
+        <div className="mb-12">
+          <div className="grid grid-cols-2 gap-12">
+            <CPU stat={stat} />
+            <Memory stat={stat} />
+          </div>
         </div>
         <div className="mb-24">
           <Process stat={stat} />

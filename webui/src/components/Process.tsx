@@ -23,8 +23,8 @@ export const Process = ({ stat }: Props) => {
     : [];
 
   return (
-    <>
-      <h2 className="text-2xl font-bold pb-8">Process</h2>
+    <div>
+      <h2 className="text-2xl font-bold text-center pb-8">Process</h2>
       <div className="">
         <div className="card card-side bg-base-200 shadow-xl">
           <div className="card-body">
@@ -46,6 +46,6 @@ export const Process = ({ stat }: Props) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
